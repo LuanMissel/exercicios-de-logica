@@ -1,0 +1,12 @@
+algoritmo hello;
+// Síntese
+//  Objetivo:  testar
+//  Entrada : não tem
+//  Saída   : mensagem "o Luan entendeu o conteúdo"
+
+
+principal
+	// Declarações
+	// Instruções
+	escreva ("o Luan entendeu o conteúdo");
+fimPrincipal

@@ -1,0 +1,20 @@
+algoritmo soma;
+// Síntese
+//  Objetivo:
+//  Entrada :
+//  Saída   :
+
+
+principal
+	// Declarações
+	inteiro numero1, numero2, media;
+	// Instruções
+ 	escreva ("digite um número: ");
+ 	leia(numero1);
+ 	escreva ("digite um numero: ");
+ 	leia(numero2);
+ 	media = numero1 + numero2 /2;
+	escreva ("a média é: ",media) ;
+	
+ 	
+ fimPrincipal

@@ -1,0 +1,31 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo:  pedra papel e tesoura
+//  Entrada : pedra e papel
+//  Saída   : resultado
+
+
+principal
+	// Declarações
+	texto jogador1, jogador2;
+	// Instruções
+		escreva ("Jogador1, digite pedra papel ou tesoura");
+		leia (jogador1);
+			escreva ("Jogador2, digite pedra papel ou tesoura");
+		leia (jogador2);
+
+	// Verifica empate
+				se (jogador1 = jogador2) entao
+				escreva ("empate");
+		senao
+			se ((jogador1 = "pedra" e jogador2 = "papel"); ou
+			(jogador1 = "papel" e jogador2 = "tesoura") ou
+			(jogador1 = "tesoura" e jogador2 = "pedra")) entao
+			escreva ("jogador1 ganhou");
+			senao
+			escreva ("jogador2 ganhou");
+			fimSe
+		fimSe
+	
+		
+fimPrincipal

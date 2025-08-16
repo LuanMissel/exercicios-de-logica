@@ -1,0 +1,53 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo:  
+//  Entrada :
+//  Saída   :
+
+
+principal
+	// Declarações
+	inteiro voto, votosAdamastor, votosCarmelia, votosBolsonaro;
+	// Instruções
+	votosAdamastor = 0;
+	votosBolsonaro = 0;
+	votosCarmelia = 0;
+	faca
+		escreval ("Digite o número do candidato: ");
+		escreval (" 12 - Adamastor ");
+		escreval (" 53 - Carmelia ");
+		escreval (" 22 - Bolsonaro ");
+		escreval (" 0 - Para sair ");
+		escreval (" Escolha o numero do candidato: ");
+		leia (voto);
+		escolha (voto)
+			caso 12
+				votosAdamastor = votosAdamastor + 1;
+				interrompa;
+			caso 22
+				votosBolsonaro = votosBolsonaro + 1;
+				interrompa;
+			caso 53
+				votosCarmelia = votosCarmelia + 1;
+				interrompa;
+			fimEscolha
+			enquanto (voto!= 0);
+
+	se ((votosAdamastor > votosBolsonaro) e (votosAdamastor > votosCarmelia)) entao
+		escreval("prefeito eleito é Adamastor");
+	senao 
+		se ((votosBolsonaro > votosAdamastor) e (votosBolsonaro > votosCarmelia)) entao
+			escreval("prefeito eleito é Bolsonaro");
+			senao
+				se ((votosCarmelia > votosAdamastor) e (votosCarmelia > votosBolsonaro)) entao
+				escreval("prefeita eleita é Carmelia");
+			senao 
+				escreval ("houve empate!");
+			fimSe
+		fimSe
+	fimSe		
+
+	escreval ("Bolsonaro recebeu: ",votosBolsonaro);
+		escreval ("Adamastor recebeu: ",votosAdamastor);
+			escreval ("Carmélia recebeu: ",votosCarmelia);
+fimPrincipal

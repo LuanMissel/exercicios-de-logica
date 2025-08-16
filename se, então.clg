@@ -1,0 +1,25 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo: Parabenizar o aluno  
+//  Entrada :nota
+//  Saída   :mensagem de parabens
+
+
+principal
+	// Declarações
+	real nota;
+	// Instruções
+	escreva ("Digite uma nota ");
+	leia (nota);
+
+	se (nota >= 7) entao
+		escreval("aprovado!!");
+			se (nota == 10) entao 
+				escreval ("parabens!!");
+			fimSe
+	senao 
+	escreval ("reprovado");
+	fimSe
+
+	escreva("Sua nota é ", nota);
+fimPrincipal

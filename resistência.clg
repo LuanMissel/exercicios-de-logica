@@ -1,0 +1,18 @@
+algoritmo Resistencia;
+// Síntese
+//  Objetivo: calcular o valor de uma resistência equivalente. 
+//  Entrada : valores de entrada.
+//  Saída   : monitor de video.
+
+
+principal
+	// Declarações
+	real r1, r2, req;
+	// Instruções
+	escreva ("Digite o valor da primeira resistência: ");
+	leia(r1);
+	escreva ("Digite o valor da segunda resistência: ");
+	leia(r2);
+	req = (r1 * r2) /(r1 + r2);
+	escreva ("o valor da resistência é: ", req:5:2, " ohms");
+fimPrincipal

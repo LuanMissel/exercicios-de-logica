@@ -1,0 +1,18 @@
+algoritmo soma;
+// Síntese
+//  Objetivo:
+//  Entrada :
+//  Saída   :
+
+
+principal
+	// Declarações
+	inteiro numero1, numero2, soma;
+	// Instruções
+	escreva("numero1");
+	leia (numero1);
+	escreva ("numero2");
+	leia(numero2);
+	soma = numero1 + numero2 ;
+	escreva ("a soma é: ", soma);
+fimPrincipal

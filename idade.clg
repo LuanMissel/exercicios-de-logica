@@ -1,0 +1,20 @@
+algoritmo pessoa;
+// Síntese
+//  Objetivo:Coletar os dados de uma pessoa
+//  Entrada :nome e idade
+//  Saída   : mansagem contendo nome e idade
+
+
+principal
+	// Declarações
+	texto nome;
+	inteiro idade;
+	// Instruções
+	escreva ("Digite seu nome: ");
+	leia (nome);
+	escreva ("Digite sua idade: "); 
+	leia (idade);
+escreval ("Seu nome é ", nome);
+escreva ("e voce tem ", idade, " anos.");
+
+fimPrincipal	

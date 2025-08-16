@@ -1,0 +1,39 @@
+algoritmo IRPF; // <- ponto e vírgula obrigatório
+
+// Objetivo: calcular o valor da aliquota do IRPF
+// Entrada : valor da base de cálculo
+// Saída   : valor do imposto
+
+principal
+    // Declarações
+    real base, valor_ir;
+
+    // Instruções
+    escreva("Digite o valor da base de cálculo: ");
+    leia(base);
+
+    se (base <= 22847.76) entao
+        escreva("Alíquota é isenta!");
+    senao
+        se (base >= 22847.77) entao
+            se (base <= 33919.80) entao
+                valor_ir = base * 7.5 / 100;
+                escreva("Valor a pagar é de: ", valor_ir);
+            senao
+                se (base <= 45012.60) entao
+                    valor_ir = base * 15 / 100;
+                    escreva("Valor a pagar é de: ", valor_ir);
+                senao
+                    se (base <= 55976.16) entao
+                        valor_ir = base * 22.5 / 100;
+                        escreva("Valor a pagar é de: ", valor_ir);
+                    senao
+                        valor_ir = base * 27.5 / 100;
+                        escreva("Valor a pagar é de: ", valor_ir);
+                    fimSe
+                fimSe
+            fimSe
+        fimSe
+    fimSe
+
+fimPrincipal
